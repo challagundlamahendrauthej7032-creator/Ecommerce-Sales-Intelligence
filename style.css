@@ -1,47 +1,302 @@
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    padding: 0;
     background-color: #f4f7fb;
     color: #222;
+    line-height: 1.6;
 }
+
+/* =========================
+   HEADER
+========================= */
 
 header {
     background-color: #1f4e79;
     color: white;
     text-align: center;
-    padding: 60px 20px;
+    padding: 80px 20px;
 }
 
 header h1 {
-    font-size: 42px;
-    margin-bottom: 10px;
+    font-size: 44px;
+    margin: 0 0 12px;
 }
 
-header h2 {
-    font-size: 22px;
-    font-weight: normal;
+header p {
+    font-size: 20px;
+    margin: 8px 0;
 }
+
+.tagline {
+    font-size: 18px;
+    opacity: 0.95;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    background-color: white;
+    text-align: center;
+    padding: 18px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+nav a {
+    color: #1f4e79;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #163a5c;
+    text-decoration: underline;
+}
+
+/* =========================
+   SECTIONS
+========================= */
 
 section {
     max-width: 900px;
     margin: 30px auto;
-    padding: 30px;
+    padding: 35px;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
 }
 
-h2 {
+section h2 {
+    color: #1f4e79;
+    border-bottom: 2px solid #1f4e79;
+    padding-bottom: 8px;
+    margin-top: 0;
+}
+
+section h3 {
     color: #1f4e79;
 }
 
-ul {
-    line-height: 2;
+/* =========================
+   SKILLS
+========================= */
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-footer {
-    text-align: center;
+.skill {
+    background-color: #e8f1f8;
+    color: #1f4e79;
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.skill:hover {
+    background-color: #d5e6f3;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   PROJECTS
+========================= */
+
+.project {
+    background-color: #f8fafc;
+    border-left: 5px solid #1f4e79;
     padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.project:last-child {
+    margin-bottom: 0;
+}
+
+.project:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.project h3 {
+    color: #1f4e79;
+    margin-top: 0;
+}
+
+/* =========================
+   CERTIFICATES
+========================= */
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-item {
+    margin: 15px 0;
+}
+
+.contact-link {
+    color: #1f4e79;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   SOCIAL BUTTONS
+========================= */
+
+.social-links {
+    margin-top: 25px;
+}
+
+.social-link {
+    display: inline-block;
     background-color: #1f4e79;
     color: white;
+    padding: 11px 22px;
+    margin: 5px 8px 5px 0;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.social-link:hover {
+    background-color: #163a5c;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #1f4e79;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 60px 15px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header p {
+        font-size: 17px;
+    }
+
+    nav {
+        padding: 12px 5px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 7px;
+        font-size: 14px;
+    }
+
+    section {
+        margin: 20px 12px;
+        padding: 25px 20px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    .skills {
+        gap: 8px;
+    }
+
+    .skill {
+        padding: 8px 14px;
+        font-size: 14px;
+    }
+
+    .project {
+        padding: 17px;
+    }
+
+    .social-link {
+        padding: 10px 16px;
+    }
+}
+
+/* =========================
+   SMALL MOBILE DEVICES
+========================= */
+
+@media (max-width: 480px) {
+
+    header h1 {
+        font-size: 27px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    nav a {
+        font-size: 13px;
+        margin: 4px;
+    }
+
+    section {
+        padding: 20px 15px;
+    }
+
+    .social-link {
+        display: block;
+        text-align: center;
+        margin-right: 0;
+    }
 }
