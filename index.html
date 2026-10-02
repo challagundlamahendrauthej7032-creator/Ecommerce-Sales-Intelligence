@@ -3,634 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Challagundla Mahendra Uthej - Portfolio</title>
-
-    <style>
-        /* =========================
-           GENERAL
-        ========================== */
-
-        * {
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-            background-color: #f4f7fb;
-            color: #222;
-            line-height: 1.6;
-        }
-
-        /* =========================
-           HEADER
-        ========================== */
-
-        header {
-            background-color: #1f4e79;
-            color: white;
-            text-align: center;
-            padding: 80px 20px;
-        }
-
-        header h1 {
-            font-size: 44px;
-            margin: 0 0 12px;
-        }
-
-        header p {
-            font-size: 20px;
-            margin: 8px 0;
-        }
-
-        .tagline {
-            font-size: 18px;
-            opacity: 0.95;
-        }
-
-        /* =========================
-           NAVIGATION
-        ========================== */
-
-        nav {
-            background-color: white;
-            text-align: center;
-            padding: 18px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-        }
-
-        nav a {
-            color: #1f4e79;
-            text-decoration: none;
-            margin: 0 12px;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: #163a5c;
-            text-decoration: underline;
-        }
-
-        /* =========================
-           SECTIONS
-        ========================== */
-
-        section {
-            max-width: 900px;
-            margin: 30px auto;
-            padding: 35px;
-            background-color: white;
-            border-radius: 12px;
-            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
-        }
-
-        section h2 {
-            color: #1f4e79;
-            border-bottom: 2px solid #1f4e79;
-            padding-bottom: 8px;
-            margin-top: 0;
-        }
-
-        section h3 {
-            color: #1f4e79;
-        }
-
-        /* =========================
-           SKILLS
-        ========================== */
-
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .skill {
-            background-color: #e8f1f8;
-            color: #1f4e79;
-            padding: 10px 18px;
-            border-radius: 20px;
-            font-weight: bold;
-        }
-
-        .skill:hover {
-            background-color: #d5e6f3;
-        }
-
-        /* =========================
-           PROJECTS
-        ========================== */
-
-        .project {
-            background-color: #f8fafc;
-            border-left: 5px solid #1f4e79;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 6px;
-        }
-
-        .project:last-child {
-            margin-bottom: 0;
-        }
-
-        .project h3 {
-            color: #1f4e79;
-            margin-top: 0;
-        }
-
-        /* =========================
-           CERTIFICATES
-        ========================== */
-
-        ul {
-            padding-left: 25px;
-        }
-
-        li {
-            margin-bottom: 10px;
-        }
-
-        /* =========================
-           CONTACT
-        ========================== */
-
-        .contact-item {
-            margin: 15px 0;
-        }
-
-        .contact-link {
-            color: #1f4e79;
-            font-weight: bold;
-            text-decoration: none;
-        }
-
-        .contact-link:hover {
-            text-decoration: underline;
-        }
-
-        /* =========================
-           SOCIAL BUTTONS
-        ========================== */
-
-        .social-links {
-            margin-top: 25px;
-        }
-
-        .social-link {
-            display: inline-block;
-            background-color: #1f4e79;
-            color: white;
-            padding: 11px 22px;
-            margin: 5px 8px 5px 0;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .social-link:hover {
-            background-color: #163a5c;
-            transform: translateY(-2px);
-        }
-
-        /* =========================
-           FOOTER
-        ========================== */
-
-        footer {
-            background-color: #1f4e79;
-            color: white;
-            text-align: center;
-            padding: 30px 20px;
-            margin-top: 40px;
-        }
-
-        footer p {
-            margin: 5px 0;
-        }
-
-        /* =========================
-           MOBILE RESPONSIVE
-        ========================== */
-
-        @media (max-width: 768px) {
-
-            header {
-                padding: 60px 15px;
-            }
-
-            header h1 {
-                font-size: 32px;
-            }
-
-            header p {
-                font-size: 17px;
-            }
-
-            nav {
-                padding: 12px 5px;
-            }
-
-            nav a {
-                display: inline-block;
-                margin: 5px 7px;
-                font-size: 14px;
-            }
-
-            section {
-                margin: 20px 12px;
-                padding: 25px 20px;
-            }
-
-            .skill {
-                padding: 8px 14px;
-                font-size: 14px;
-            }
-
-            .social-link {
-                padding: 10px 16px;
-            }
-        }
-    </style>
+    <title>E-Commerce Sales Intelligence</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- =========================
-         HEADER
-    ========================== -->
-
     <header>
-
-        <h1>Challagundla Mahendra Uthej</h1>
-
-        <p>
-            Aspiring Data Analyst | AI &amp; ML Student
-        </p>
-
-        <p class="tagline">
-            Python | SQL | Excel | Power BI
-        </p>
-
+        <h1>AI-Powered E-Commerce Sales & Customer Intelligence</h1>
+        <p>Python | MySQL | SQL | Power BI | Data Analytics</p>
     </header>
 
+    <main>
 
-    <!-- =========================
-         NAVIGATION
-    ========================== -->
-
-    <nav>
-
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#projects">Projects</a>
-        <a href="#certificates">Certificates</a>
-        <a href="#career">Career Goal</a>
-        <a href="#contact">Contact</a>
-
-    </nav>
-
-
-    <!-- =========================
-         ABOUT
-    ========================== -->
-
-    <section id="about">
-
-        <h2>About Me</h2>
-
-        <p>
-            Hello! I am Challagundla Mahendra Uthej,
-            a Bachelor of Engineering student specializing in
-            Artificial Intelligence and Machine Learning.
-        </p>
-
-        <p>
-            I am interested in Data Analytics, Data Science and
-            Machine Learning. I am currently developing my skills
-            in Excel, SQL, Python and Power BI.
-        </p>
-
-        <p>
-            I am passionate about learning new technologies,
-            solving problems with data and building practical
-            projects that can create real-world impact.
-        </p>
-
-    </section>
-
-
-    <!-- =========================
-         SKILLS
-    ========================== -->
-
-    <section id="skills">
-
-        <h2>Skills</h2>
-
-        <div class="skills">
-
-            <span class="skill">Python</span>
-            <span class="skill">SQL</span>
-            <span class="skill">Excel</span>
-            <span class="skill">Power BI</span>
-            <span class="skill">Statistics</span>
-            <span class="skill">Machine Learning</span>
-            <span class="skill">Data Analytics</span>
-            <span class="skill">Git &amp; GitHub</span>
-            <span class="skill">HTML</span>
-            <span class="skill">CSS</span>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         EDUCATION
-    ========================== -->
-
-    <section id="education">
-
-        <h2>Education</h2>
-
-        <h3>
-            Bachelor of Engineering -
-            Artificial Intelligence and Machine Learning
-        </h3>
-
-        <p>
-            <strong>Prathyusha Engineering College</strong>
-        </p>
-
-        <p>
-            CGPA: <strong>8.39</strong>
-        </p>
-
-
-        <h3>Intermediate</h3>
-
-        <p>
-            Completed Intermediate Education
-        </p>
-
-
-        <h3>10th Standard</h3>
-
-        <p>
-            Completed Secondary School Education
-        </p>
-
-    </section>
-
-
-    <!-- =========================
-         PROJECTS
-    ========================== -->
-
-    <section id="projects">
-
-        <h2>Projects</h2>
-
-
-        <div class="project">
-
-            <h3>Customer Churn Prediction</h3>
-
+        <section>
+            <h2>Project Overview</h2>
             <p>
-                Machine learning project to predict whether
-                a customer is likely to leave a service.
+                This project analyzes e-commerce sales data to understand
+                sales performance, customer behavior, product performance,
+                and country-wise sales.
             </p>
+        </section>
 
-            <p>
-                <strong>Tools:</strong>
-                Python, Pandas, Scikit-learn, Random Forest
-            </p>
+        <section>
+            <h2>Key Metrics</h2>
 
-        </div>
+            <div class="cards">
+                <div class="card">
+                    <h3>8.13M</h3>
+                    <p>Total Sales</p>
+                </div>
 
+                <div class="card">
+                    <h3>18.5K</h3>
+                    <p>Total Orders</p>
+                </div>
 
-        <div class="project">
+                <div class="card">
+                    <h3>4.3K</h3>
+                    <p>Customers</p>
+                </div>
 
-            <h3>Fake News Detection</h3>
+                <div class="card">
+                    <h3>3.6K+</h3>
+                    <p>Products</p>
+                </div>
+            </div>
+        </section>
 
-            <p>
-                Machine learning project for classifying news
-                as real or fake using natural language processing.
-            </p>
+        <section>
+            <h2>Dashboard</h2>
+            <img src="Ecommerce_Sales_Intelligence_Dashboard.png"
+                 alt="E-Commerce Sales Intelligence Power BI Dashboard">
+        </section>
 
-            <p>
-                <strong>Tools:</strong>
-                Python, NLP, TF-IDF, Flask
-            </p>
+        <section>
+            <h2>Technologies Used</h2>
+            <ul>
+                <li>Python & Pandas</li>
+                <li>MySQL & SQL</li>
+                <li>Power BI</li>
+                <li>Excel</li>
+                <li>GitHub</li>
+            </ul>
+        </section>
 
-        </div>
-
-
-        <div class="project">
-
-            <h3>Power BI Data Analytics Dashboard</h3>
-
-            <p>
-                Interactive dashboard for analyzing data and
-                presenting useful insights through visualizations.
-            </p>
-
-            <p>
-                <strong>Tools:</strong>
-                Power BI, Data Visualization
-            </p>
-
-        </div>
-
-
-        <div class="project">
-
-            <h3>SQL Data Analysis</h3>
-
-            <p>
-                SQL practice projects involving filtering,
-                grouping, joins, aggregation and analytical queries.
-            </p>
-
-            <p>
-                <strong>Tools:</strong>
-                MySQL
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         CERTIFICATES
-    ========================== -->
-
-    <section id="certificates">
-
-        <h2>Certificates &amp; Achievements</h2>
-
-        <ul>
-
-            <li>
-                NPTEL - Internet of Things
-            </li>
-
-            <li>
-                AWS Educate - Machine Learning Foundations
-            </li>
-
-            <li>
-                AWS Educate - Introduction to Cloud 101
-            </li>
-
-            <li>
-                AWS Educate - Introduction to Generative AI
-            </li>
-
-            <li>
-                NPTEL - Cloud Computing
-            </li>
-
-            <li>
-                NPTEL - Cyber Security and Privacy
-            </li>
-
-        </ul>
-
-    </section>
-
-
-    <!-- =========================
-         CAREER GOAL
-    ========================== -->
-
-    <section id="career">
-
-        <h2>Career Goal</h2>
-
-        <p>
-            My short-term goal is to obtain an internship or
-            entry-level opportunity as a Data Analyst where I can
-            apply my skills in Excel, SQL, Python and Power BI.
-        </p>
-
-        <p>
-            My long-term goal is to grow into Data Science and
-            Data Engineering roles while continuously improving
-            my technical and analytical skills.
-        </p>
-
-    </section>
-
-
-    <!-- =========================
-         CONTACT
-    ========================== -->
-
-    <section id="contact">
-
-        <h2>Contact</h2>
-
-        <p class="contact-item">
-            <strong>Name:</strong>
-            Challagundla Mahendra Uthej
-        </p>
-
-        <p class="contact-item">
-            <strong>Mobile:</strong>
-            <a
-                class="contact-link"
-                href="tel:+917032431800">
-                +91 7032431800
-            </a>
-        </p>
-
-        <p class="contact-item">
-    <strong>Email:</strong>
-    <a
-        class="contact-link"
-        href="mailto:challagundlamahendrauthej7032@gmail.com">
-        challagundlamahendrauthej7032@gmail.com
-    </a>
-</p>
-
-        <p class="contact-item">
-            <strong>LinkedIn:</strong>
-            <a
-                class="contact-link"
-                href="https://www.linkedin.com/in/mahendra-uthej-ab19993a6"
-                target="_blank"
-                rel="noopener noreferrer">
-                Visit my LinkedIn Profile
-            </a>
-        </p>
-
-        <p class="contact-item">
-            <strong>GitHub:</strong>
-            <a
-                class="contact-link"
-                href="https://github.com/challagundlamahendrauthej7032-creator"
-                target="_blank"
-                rel="noopener noreferrer">
-                Visit my GitHub Profile
-            </a>
-        </p>
-
-
-        <div class="social-links">
-
-            <a
-                class="social-link"
-                href="https://www.linkedin.com/in/mahendra-uthej-ab19993a6"
-                target="_blank"
-                rel="noopener noreferrer">
-                LinkedIn
-            </a>
-
-            <a
-                class="social-link"
-                href="https://github.com/challagundlamahendrauthej7032-creator"
-                target="_blank"
-                rel="noopener noreferrer">
-                GitHub
-            </a>
-
-            <a
-                class="social-link"
-                href="tel:+917032431800">
-                Call Me
-            </a>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         FOOTER
-    ========================== -->
+    </main>
 
     <footer>
-
-        <p>
-            © 2026 Challagundla Mahendra Uthej
-        </p>
-
-        <p>
-            Aspiring Data Analyst | AI &amp; ML Student
-        </p>
-
+        <p>E-Commerce Sales Intelligence Project</p>
     </footer>
 
 </body>
